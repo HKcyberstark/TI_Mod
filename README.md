@@ -1,5 +1,6 @@
 # TI_Mod
 Threat Intelligence with Elastic - Minemeld integration with Elasticsearch
+
 Threat intelligence feeds 
 knowledge really is a power. Knowing the methods and tools attackers are most likely to use can help you better prepare your cybersecurity architecture.  Threat intelligence feeds can assist in this process by identifying common indicators of compromise (IOC) and recommending necessary steps to prevent attack or infection.
 •	Threat intelligence feeds are constantly updating streams of indicators or artifacts derived from a source outside the organization.
