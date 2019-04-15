@@ -4,9 +4,9 @@ Threat Intel with Elastic - Minemeld integration with Elasticsearch
 ## Threat intelligence feeds
 
 knowledge really is a power. Knowing the methods and tools attackers are most likely to use can help you better prepare your cybersecurity architecture.  Threat intelligence feeds can assist in this process by identifying common indicators of compromise (IOC) and recommending necessary steps to prevent attack or infection.
-*Threat intelligence feeds are constantly updating streams of indicators or artifacts derived from a source outside the organization.
-*By comparing threat feeds with internal telemetry, you can automate the production of highly valuable operational intelligence.
-*Selecting the right feeds isn’t enough. You should be constantly monitoring the ROI of feeds to determine their value to your organization.
+* Threat intelligence feeds are constantly updating streams of indicators or artifacts derived from a source outside the organization.
+* By comparing threat feeds with internal telemetry, you can automate the production of highly valuable operational intelligence.
+* Selecting the right feeds isn’t enough. You should be constantly monitoring the ROI of feeds to determine their value to your organization.
 
 ## Threat Intelligence Tool
 
@@ -15,20 +15,20 @@ Opensource feeds are a very good data source in which you can analyse and have t
 
 ## Prerequisites
 
-*This blog expects to have elastic stack to be readily configured.
-*VM/server with minimum 4 GB of RAM
+* This blog expects to have elastic stack to be readily configured.
+* VM/server with minimum 4 GB of RAM
 
 ## Tools used
 
-*Mienmeld – Open source Threat feeds developed by paloalto
-*Logstash configuration for minelemeld
+* Mienmeld – Open source Threat feeds developed by paloalto
+* Logstash configuration for minelemeld
 
 **Minemeld** is an open-source application that streamlines the aggregation, enforcement and sharing of threat intelligence. 
 
  *Work flow* 
-*collect and aggregate threat intelligence across public, private and commercial intelligence sources
-*filter, deduplicate and consolidate metadata across all sources
-*Consolidated data is consumed by third party enforcement infrastructure. [Elastic Logstash in our case]
+* collect and aggregate threat intelligence across public, private and commercial intelligence sources
+* filter, deduplicate and consolidate metadata across all sources
+* Consolidated data is consumed by third party enforcement infrastructure. [Elastic Logstash in our case]
 
 *Logical Flow*
 
