@@ -6,7 +6,7 @@ Threat intelligence feeds
 knowledge really is a power. Knowing the methods and tools attackers are most likely to use can help you better prepare your cybersecurity architecture.  Threat intelligence feeds can assist in this process by identifying common indicators of compromise (IOC) and recommending necessary steps to prevent attack or infection.
 Threat intelligence feeds are constantly updating streams of indicators or artifacts derived from a source outside the organization.
 By comparing threat feeds with internal telemetry, you can automate the production of highly valuable operational intelligence.
-Selecting the right feeds isn’t enough. You should be constantly monitoring the ROI of feeds to determine their value to your organization.
+Selecting the right feeds isnâ€™t enough. You should be constantly monitoring the ROI of feeds to determine their value to your organization.
 
 Threat Intelligence Tool
 
@@ -18,7 +18,7 @@ Prerequisites
 ELK stack readily installed and configured
 VM/Server with 4 GB of RAM
 
-Tools USed
+Tools Used
 Mienemeld - opensource threat feeds developed by Paloalto
 Logstash - Logstash configuration for realtime collection of threatfeeds and indexing into elasticsearch
 
