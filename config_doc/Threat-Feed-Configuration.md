@@ -34,9 +34,9 @@ Minemeld Web UI is installed along with the core engine using above Ansible play
 ![2](https://user-images.githubusercontent.com/40884455/56400786-45584d80-6288-11e9-85b4-7253acbf536e.JPG)
 
 Select the prototype you wish to add. I will be adding Ipv4 indicators as miners that are not available by default.
-  - if you wish to add the Ipv4 miner ñ  select clone and click ok
+  - if you wish to add the Ipv4 miner ‚Äì  select clone and click ok
 
-  - if you wish to customise the miner by adding your own data feed inputs ñ select new and edit the config
+  - if you wish to customise the miner by adding your own data feed inputs ‚Äì select new and edit the config
 
 ![3](https://user-images.githubusercontent.com/40884455/56400830-7c2e6380-6288-11e9-8fb8-12e7d02fd174.JPG)
 
@@ -55,6 +55,6 @@ Below example is a customized Ipv4 processor and logstash output config.
 
 ![6](https://user-images.githubusercontent.com/40884455/56400901-e21aeb00-6288-11e9-99eb-86b975f165e2.JPG)
 
-Once the Threat feeds are configured ñ The changes should be Saved by Clicking ìCommitî button at right top corner of config tab.  [ **But wait**]
+Once the Threat feeds are configured ‚Äì The changes should be Saved by Clicking ‚ÄúCommit‚Äù button at right top corner of config tab.  [ **But wait**]
 
 *Once the threat feeds are committed to process, Logstash output node would be continuously sending data to the configured Logstash host. So it is important to configure your Logstash instance ready before committing the threat feeds.*
