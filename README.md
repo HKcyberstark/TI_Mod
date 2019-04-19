@@ -65,11 +65,11 @@ Minemeld Can be easily and directly installed with their Ansible playbook.  more
 
 CentOS would be used for this demonstration and complete installation and threat feed configuration is available in **config_doc**
 
-## logstash configuration
+## Logstash configuration
 
 Logstash configuration file that can be used for processing the threat feeds into elastic search index is available in **config_doc**
 
-## what’s Next?
+## What’s Next?
 
 Logstash Configured. Threat feeds collected, processed and loaded into elastic search using configured Logstash. Now it is time to get best out of threat intel feeds.
 
