@@ -61,13 +61,13 @@ The Logstash output node can be edited as new node to customise the Logstash hos
 
 ## Minemeld Installation and configuration
 
-Minemeld Can be easily and directly installed with their Ansible playbook.  more details in their [Minemeld-Github!] (https://github.com/PaloAltoNetworks/minemeld-ansible)
+Minemeld Can be easily and directly installed with their Ansible playbook.  more details in their [Minemeld-Github](https://github.com/PaloAltoNetworks/minemeld-ansible)
 
-CentOS would be used for this demonstration and complete installation and threat feed configuration is available in [config_doc!](https://github.com/Cyb3rStark/TI_Mod/tree/master/config_doc)
+CentOS would be used for this demonstration and complete installation and threat feed configuration is available in **config_doc**
 
 ## logstash configuration
 
-Logstash configuration file that can be used for processing the threat feeds into elastic search index is available in [config_doc!](https://github.com/Cyb3rStark/TI_Mod/tree/master/config_doc)
+Logstash configuration file that can be used for processing the threat feeds into elastic search index is available in **config_doc**
 
 # what’s Next?
 
