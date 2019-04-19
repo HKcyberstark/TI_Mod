@@ -6,7 +6,7 @@ Threat Intel with Elastic - Minemeld integration with Elasticsearch
 knowledge really is a power. Knowing the methods and tools attackers are most likely to use can help you better prepare your cybersecurity architecture.  Threat intelligence feeds can assist in this process by identifying common indicators of compromise (IOC) and recommending necessary steps to prevent attack or infection.
 * Threat intelligence feeds are constantly updating streams of indicators or artifacts derived from a source outside the organization.
 * By comparing threat feeds with internal telemetry, you can automate the production of highly valuable operational intelligence.
-* Selecting the right feeds isn’t enough. You should be constantly monitoring the ROI of feeds to determine their value to your organization.
+* Selecting the right feeds isnâ€™t enough. You should be constantly monitoring the ROI of feeds to determine their value to your organization.
 
 ## Threat Intelligence Tool
 
@@ -20,7 +20,7 @@ Opensource feeds are a very good data source in which you can analyse and have t
 
 ## Tools used
 
-* Mienmeld – Open source Threat feeds developed by paloalto
+* Mienmeld â€“ Open source Threat feeds developed by paloalto
 * Logstash configuration for minelemeld
 
 **Minemeld** is an open-source application that streamlines the aggregation, enforcement and sharing of threat intelligence. 
@@ -45,3 +45,7 @@ IPv4 aggregator processor nodes are available by default. It can be used or the 
 **Output Node**
 We would be using Logstash Output node which will send processed feeds to the Logstash node in a TCP stream with default host to be local host/127.0.0.1 and default port of 5414.
 The Logstash output node can be edited as new node to customise the Logstash host and port if needed. 
+
+## Architecture
+
+![Ti_mod - architecture](https://user-images.githubusercontent.com/40884455/56400362-2062db00-6286-11e9-8c6f-5422c75bae7b.JPG)
