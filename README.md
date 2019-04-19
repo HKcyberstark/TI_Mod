@@ -59,7 +59,7 @@ The Logstash output node can be edited as new node to customise the Logstash hos
 
 ![Ti_mod - architecture](https://user-images.githubusercontent.com/40884455/56400362-2062db00-6286-11e9-8c6f-5422c75bae7b.JPG)
 
-## Minemeld Installation and configuration
+## Installation and configuration
 
 Minemeld Can be easily and directly installed with their Ansible playbook.  more details in their [Minemeld-Github](https://github.com/PaloAltoNetworks/minemeld-ansible)
 
