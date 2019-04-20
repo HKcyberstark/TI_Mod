@@ -17,11 +17,6 @@ Opensource feeds are a very good data source in which you can analyse and have t
 
 Elastic stack can be used as an effective security analytics platform when architected efficiently.  Threat feeds indexed into the elastic can be compared and proceeded with your security data (firewall, IPS/IDS, proxy data) for automatic alerting and visualization when your network traffic is talking with such Indicators of compromise. 
 
-Intel data can be used for comparison and alerting in several ways,Some of them are
-
-* Method 1 :  Analyse your network traffic with the Threat intel data already stored in elastic before the network traffic being written to elastic.
-* Method 2 :  Get your intel feeds and network data in a separate index, have a watcher alert when the data in the two indices match.
-
 ## Prerequisites
 
 * This blog expects to have elastic stack to be readily configured.
@@ -71,51 +66,17 @@ Logstash configuration file that can be used for processing the threat feeds int
 
 ## What’s Next?
 
-Logstash Configured. Threat feeds collected, processed and loaded into elastic search using configured Logstash. Now it is time to get best out of threat intel feeds.
+Logstash Configured. Threat feeds collected, processed and loaded into elastic search using configured Logstash. Now it is time to get best out of threat intel feeds. Various visualising/monitoring and alerting methods to use the indexed feeds are continuously updated in **use-case** directory.
 
-* Use case Method 1
-
-Query the Network Data with threat intel feeds during schema on write
-
-Add below Filter plugin with your Network data processing to query the threat feeds matching.
-
-So, for events that hit this filter (firewall traffic), the "src_ip" is checked against the minemeld index and checks if the IP address exists within each range. This then adds new fields to the firewall traffic (sources/confidence) and adds a new tag (minemeld_trigger_src).
-
-```
-filter {
-    elasticsearch {
-        hosts => ["localhost:9200"]
-        index => "logstash-threatintel"
-        query_template => "/usr/share/logstash/search-minemeld-src.json"
-        fields => {
-            "sources" => "threatintel_source"
-            "confidence" => "threatintel_confidence"
-        }
-        add_tag => [ "threatintel_trigger_src" ]
-    }
-}
-```
-
-have the following within /usr/share/logstash/search-minemeld-src.json
-
-
-```
-{
-  "size": 1,
-  "query": {
-    "bool": {
-      "filter": [
-        { "range": { "firstIP": { "lte": "%{[src_ip]}" }}} ,
-        { "range": { "lastIP": { "gte": "%{[src_ip]}" }}}
-      ]
-    }
-  },
-  "_source": ["sources", "confidence"]
-}
-```
+* Method 1 :  Analyse your network traffic with the Threat intel data already stored in elastic before the network traffic being written to elastic.
+* Method 2 :  Get your intel feeds and network data in a separate index, have a watcher alert when the data in the two indices match.
 
 ## Next steps
 
 - [ ] Create watcher alert using intel data (method 2)
 - [ ] Create executive threat intel dashboard
-- [ ] Integrate URL and Domain feeds and create use cases
+- [ ] Integrate URL and Domain feeds and create more use cases
+
+## Contribution
+
+Continuous enhancement and improvement with use cases, visualisations, upgradation with latest version of elasticstack is the development goal of the project. Help with your expertise to enhance the project more robust and stable. 
