@@ -5,7 +5,7 @@ Minemeld Can be easily and directly installed with their Ansible playbook.  more
 CentOS would be used for this demonstration and it is good to have root access for ease of installation.
 
 ```
-$ Git clone https://github.com/PaloAltoNetworks/minemeld-ansible.git
+$ git clone https://github.com/PaloAltoNetworks/minemeld-ansible.git
 $ sudo yum install -y wget git gcc python-devel libffi-devel openssl-devel zlib-dev sqlite-devel bzip2-devel
 $ wget https://bootstrap.pypa.io/get-pip.py
 $ sudo -H python get-pip.py
