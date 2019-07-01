@@ -58,7 +58,7 @@ The Logstash output node can be edited as new node to customise the Logstash hos
 
 Minemeld Can be easily and directly installed with their Ansible playbook.  more details in their [Minemeld-Github](https://github.com/PaloAltoNetworks/minemeld-ansible)
 
-CentOS would be used for this demonstration and complete installation and threat feed configuration is available in **config_doc**
+CentOS would be used for this demonstration and complete installation and threat feed configuration is available in **config_doc** folder
 
 ## Logstash configuration
 
