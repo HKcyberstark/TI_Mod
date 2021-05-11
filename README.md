@@ -1,9 +1,9 @@
-﻿# TI_Mod
+# TI_Mod
 Threat Intel with Elastic - Minemeld integration with Elasticsearch
 
 ## Threat intelligence feeds
 
-knowledge really is a power. Knowing the methods and tools attackers are most likely to use can help you better prepare your cybersecurity architecture.  Threat intelligence feeds can assist in this process by identifying common indicators of compromise (IOC) and recommending necessary steps to prevent attack or infection.
+Knowledge really is a power. Knowing the methods and tools attackers are most likely to use can help you better prepare your cybersecurity architecture.  Threat intelligence feeds can assist in this process by identifying common indicators of compromise (IOC) and recommending necessary steps to prevent attack or infection.
 * Threat intelligence feeds are constantly updating streams of indicators or artifacts derived from a source outside the organization.
 * By comparing threat feeds with internal telemetry, you can automate the production of highly valuable operational intelligence.
 * Selecting the right feeds isn’t enough. You should be constantly monitoring the ROI of feeds to determine their value to your organization.
@@ -24,7 +24,7 @@ Elastic stack can be used as an effective security analytics platform when archi
 
 ## Tools used
 
-* Mienmeld – Open source Threat feeds developed by paloalto
+* Minemeld – Open source Threat feeds developed by Palo Alto
 * Logstash configuration for minelemeld
 
 **Minemeld** is an open-source application that streamlines the aggregation, enforcement and sharing of threat intelligence. 
